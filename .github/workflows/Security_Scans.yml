@@ -37,6 +37,7 @@ jobs:
         continue-on-error: true
 
       - name: ZAP Dynamic Analysis Scan
-        uses: zaproxy/action-full-scan@v0.11.0
+        uses: zaproxy/action-full-scan@v0.12.0
         with:
          target: 'http://www.itsecgames.com/'
+         rules_file_name: '.github/workflows/rules.zap'
